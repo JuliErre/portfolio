@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+
+
+}
+
+/* icon: https://fortawesome.github.io/Font-Awesome/icons/ */
+/* Animation: https://daneden.github.io/animate.css/ */
+
+
+.arrow-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    bottom: 100px;
+}
+
+.arrow-1 {
+    width: 100px;
+    height: 100px;
+    background: #00BCD4;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.arrow-2 {
+    width: 60px;
+    height: 60px;
+    background: #00BCD4;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    display: table;
+}
+
+.arrow-2:before {
+    width: 52px;
+    height: 52px;
+    content: "";
+    border: 2px solid #006064;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+}
+
+.arrow-2 i.fa {
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #006064;
+}
+
+/* Custom Animate.css */
+
+.animated.hinge {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(.4, .4, .4);
+        transform: scale3d(.4, .4, .4);
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+.background-Image {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    border-radius: 30px;
+    width: 50rem;
+    position: fixed;
+    bottom: 2px;
+    left: 25%;
+    z-index: 2;
+
+
+}
+
+.background-Image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    filter: blur(1px);
+    border-radius: 30px;
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+}
+
+.content {
+    z-index: 9999;
+
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70rem;
+    height: 50rem;
+    max-width: 100%;
+    transition: all 0.3s ease;
+    transition-duration: 500ms;
+
+}
+
+.presentation span {
+    color: white;
+    line-height: 1.5;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.presentation h1 {
+    color: white;
+    line-height: 1.5;
+    font-size: 3.5rem;
+    text-align: left;
+    font-weight: 400;
+
+}
+
+.profileImageContainer {
+    display: flex;
+}
+
+.profileImage {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 400px;
+    height: auto;
+}
+
+main {
+    
+    display: flex;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.projectsContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 200px;
+
+}
+
+
+
+.projects h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.projectCard {
+    line-height: 1.5;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 25rem;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgb(17, 17, 17);
+    overflow: hidden;
+
+}
+
+.projectCardContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: 100%;
+
+
+}
+
+.projectCard img {
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.cardInfo {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 270px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.cardInfo h4 {
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: 700;
+
+}
+
+.cardInfo p {
+    color: black;
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutMeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width:80%;
+    
+    
+
+
+}
+
+.aboutMeText h2{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 50px;
+    
+}
+
+.aboutMeText p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.aboutMeContainer{
+    background-color: #161822;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 85rem;
+    max-width: 100%;
+    margin-top: 50px;
+    border-radius: 30px;
+    padding-bottom: 120px;
+
+}
+
+
+.aboutMeImages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.aboutMeImages img{
+    height: 120px;
+    
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px 0;
+    border-radius: 30px;
+    margin-top: 50px;
+    width: 85rem;
+    max-width: 100%;
+}
+
+.contact h2{
+    font-size: 3.5rem
+
+}
+
+.contactImagesContainer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px ;
+   max-width: 100%;
+   flex-wrap: wrap;
+   
+}
+.contactImagesContainer img{
+    height: 140px;
+    
+    
+}
+
+.contactMail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+   
+}
+
+.contactMail img{
+    height: 40px;
+}
+
+.contactMail h5{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+footer{
+    width: 100%;
+    height: 20rem;
+    background-color: rgb(19, 18, 18);
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px
+}
+
+.footerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerInfo h4{
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 0;
+
+}
+
+.footerInfo h5{
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+
+    
+}
+
+.logoContainer{
+    display: flex;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.logoContainer img{
+    height: 40px;
+}
+
+.socialMedias{
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+
+}
