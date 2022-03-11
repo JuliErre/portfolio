@@ -1,7 +1,7 @@
 
 #  My portfolio
 
-Its my personal portfolio, there you cand find some personals projects and my contact.
+It's my personal portfolio, there you cand find some personals projects and my contact medias.
 
 ## Page link
 
