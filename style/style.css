@@ -154,6 +154,25 @@ i {
     z-index: 9999;
 
 }
+.presentationContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentationContainer button{
+   background-color: rgba(0,0,0,0.6);
+   border: 0px;
+   color: white;
+   font-size: 1.4rem;
+   padding: 20px;
+   border-radius: 25px;
+   font-weight: 700;
+   cursor: pointer;
+   position: absolute;
+   bottom: 80px;
+   left: 37%;
+}
 
 .presentation {
     display: flex;
@@ -165,6 +184,7 @@ i {
     max-width: 100%;
     transition: all 0.3s ease;
     transition-duration: 500ms;
+    position: relative;
 
 }
 
@@ -301,11 +321,10 @@ main {
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
     border: 0px;
